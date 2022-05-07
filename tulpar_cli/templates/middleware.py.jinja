@@ -1,0 +1,22 @@
+"""
+middleware/{{ file_name }}.py
+{{ date }}
+
+# Description here
+"""
+
+# Imports
+from typing import Dict
+from tulpar import TulparMiddleware, Request, Response
+
+
+class {{ class_name }}Middleware(TulparMiddleware):
+    
+    def process_request(self, req: Request, res: Response):
+        ...
+    
+    def process_resource(self, req: Request, res: Response, resource: object, params: Dict):
+        ...
+    
+    def process_response(self, req: Request, res: Response, resource: object, req_succeeded: bool):
+        ...

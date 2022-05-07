@@ -1,0 +1,20 @@
+"""
+hooks/{{ file_name }}.py
+{{ date }}
+
+# Description here
+"""
+
+# Imports
+from typing import Dict
+from tulpar import Request, Response
+
+{% if as_class %}
+class {{ class_name }}:
+
+    def __call__(self, req: Request, res: Response, resource: object, param: Dict):
+        ...
+{% else %}
+def {{ file_name }}(req: Request, res: Response, resource: object, param: Dict):
+    ...
+{% endif %} 

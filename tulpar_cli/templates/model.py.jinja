@@ -1,0 +1,14 @@
+{% if separate_file %}"""
+orm/{{ file_name }}.py
+{{ date }}
+
+# Description here
+"""
+
+# Imports
+from tulpar import Model
+{% endif %}
+
+@Model()
+class {{ class_name }}:
+    id = PrimaryKey(int, auto=True)

@@ -1,0 +1,16 @@
+"""
+resources/{{ file_name }}.py
+{{ date }}
+
+# Description here
+"""
+
+# Imports
+from tulpar import Resource, Request, Response, HTML
+
+
+@Resource()
+class {{class_name}}:
+
+    def on_get(self, req: Request, res: Response) -> HTML:
+        return HTML("<p>Hello World!</p>")

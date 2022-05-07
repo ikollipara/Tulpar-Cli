@@ -1,0 +1,19 @@
+"""
+config.py
+{{ date }}
+
+# Description here
+"""
+
+# Imports
+from tulpar import TulparConfig
+
+
+config = TulparConfig(
+    app_name="{{ app_name }}",
+    db_params=("sqlite", {
+        filename="dev.db",
+        create_db=True
+    }),
+    middleware=[]
+)

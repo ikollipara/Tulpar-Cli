@@ -1,0 +1,14 @@
+"""
+pages/{{ file_name }}.py
+{{ date }}
+
+# Description Here
+"""
+
+# Imports
+from tulpar import Page, Request, Response, HTML
+
+
+@Page()
+def {{ file_name }}(req: Request, res: Response) -> HTML:
+    return HTML("<p>Hello World!</p>")
